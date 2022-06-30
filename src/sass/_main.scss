@@ -1,0 +1,38 @@
+@import "mixins";
+
+#main {
+  width: 100%;
+  .banner {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    height: 55px;
+
+    .container {
+      display: flex;
+      gap: 140px;
+      width: 80%;
+      margin: 0 auto;
+      > div {
+        @include flex;
+        gap: 7px;
+
+        span {
+          color: #000;
+          font-size: 1rem;
+          letter-spacing: 0.05rem;
+          white-space: nowrap;
+        }
+        .badge {
+          padding: 8px 10px;
+          border-radius: 15px;
+          border: 1px solid #faa61a;
+          text-align: center;
+          line-height: 0.75rem;
+          color: #f58220;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
